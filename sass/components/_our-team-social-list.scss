@@ -1,0 +1,6 @@
+.our-team-list .social-list {
+  @extend %social-list-main-settings;
+  .social-link {
+    fill: #afb1b8;
+  }
+}

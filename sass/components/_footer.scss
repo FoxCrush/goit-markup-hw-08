@@ -1,0 +1,12 @@
+.footer {
+  display: none;
+  background-color: $footer-bgc;
+  .footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: $main-section-width;
+    padding: 48px 15px 28px 15px;
+    margin: $center-element;
+  }
+}

@@ -1,0 +1,21 @@
+.header-bottom-border-container {
+  border-bottom: 1px solid #ececec;
+}
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: $center-element;
+
+  padding: 0px 15px;
+
+  background-color: $main-bgc-white;
+  position: relative;
+  @media screen and (max-width: 767px) {
+    max-width: $mobile-section-width;
+    min-width: 210px;
+  }
+  @media screen and (min-width: 768px) {
+    width: $tablet-section-width;
+  }
+}

@@ -1,0 +1,7 @@
+.is-hidden {
+  position: absolute;
+  transform: scale(0);
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+}

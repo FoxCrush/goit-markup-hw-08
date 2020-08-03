@@ -1,0 +1,74 @@
+.modal .form-input-name,
+.modal .form-input-tel,
+.modal .form-input-mail {
+  min-height: 40px;
+  min-width: 368px;
+  border: 0;
+  overflow: hidden;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.form-field-info .name-icon,
+.form-field-info .tel-icon,
+.form-field-info .mail-icon {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(90%, -50%);
+  width: 18px;
+  height: 18px;
+  fill: $prime-text-color;
+  transition: fill $main-transition-speed cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input-name:focus + .username-label,
+.form-input-name:not(:placeholder-shown) + .username-label {
+  transform: translate(-100%, -270%);
+  color: $focused-color;
+  outline: 0;
+}
+
+.form-input-tel:focus + .tel-label,
+.form-input-tel:not(:placeholder-shown) + .tel-label {
+  transform: translate(-50%, -270%);
+  color: $focused-color;
+  outline: 0;
+}
+.form-input-mail:focus + .mail-label,
+.form-input-mail:not(:placeholder-shown) + .mail-label {
+  transform: translate(-70%, -270%);
+  color: $focused-color;
+  outline: 0;
+}
+.form-input-name:focus ~ .name-icon,
+.form-input-tel:focus ~ .tel-icon,
+.form-input-mail:focus ~ .mail-icon,
+.form-input-name:not(:placeholder-shown) ~ .name-icon,
+.form-input-tel:not(:placeholder-shown) ~ .tel-icon,
+.form-input-mail:not(:placeholder-shown) ~ .mail-icon {
+  fill: $focused-color;
+}
+.form-input-feedback:focus + .feedback-label,
+.form-input-feedback:not(:placeholder-shown) + .feedback-label {
+  transform: translateY(-220%);
+  color: $focused-color;
+  outline: 0;
+}
+.modal .form-field-feedback {
+  min-width: 448px;
+  min-height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px 12px 16px;
+}
+.modal .form-input-feedback {
+  resize: none;
+  width: 416px;
+  height: 96px;
+  border: 0;
+}
+.modal .form-input-feedback:focus {
+  outline: 0;
+}

@@ -1,0 +1,43 @@
+.features {
+  display: none;
+  max-width: $main-section-width;
+  margin: 0 auto;
+  padding: 93px 15px;
+  .features-list {
+    display: flex;
+    .features-card {
+      min-width: 270px;
+      margin-right: 30px;
+      &:nth-child(4) {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+.features-card {
+  .icon-frame {
+    min-width: 270px;
+    min-height: 120px;
+    padding: 25px 100px;
+    background-color: $secondary-bgc-grey;
+    margin-bottom: 30px;
+    .icon {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  .features-card-discription {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+    color: $description-text-color;
+  }
+  .features-card-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+}

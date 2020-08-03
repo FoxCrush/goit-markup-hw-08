@@ -1,0 +1,27 @@
+.clients .clints-list {
+  display: flex;
+  .clients-list-item {
+    margin-right: 30px;
+    &:nth-child(6) {
+      margin-right: 0px;
+    }
+  }
+  .clients-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 170px;
+    min-height: 90px;
+    fill: #afb1b8;
+    border-radius: 4px;
+    border: 1px solid #afb1b8;
+
+    transition: fill 250ms $transform-cubic, border-color 250ms $transform-cubic;
+    &:hover,
+    &:focus {
+      fill: $focused-color;
+      border-color: $focused-color;
+      cursor: pointer;
+    }
+  }
+}

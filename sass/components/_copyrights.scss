@@ -1,0 +1,14 @@
+.copyrights {
+  max-width: $main-section-width;
+  padding: 13px 15px 21px 15px;
+  margin: $center-element;
+
+  .copyrights-text {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 2;
+    /* or 200% */
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}

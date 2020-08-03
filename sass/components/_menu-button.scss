@@ -1,0 +1,23 @@
+.menu-button {
+  display: inline-flex;
+  cursor: pointer;
+  fill: #000000;
+  transition: fill 250ms $transform-cubic;
+
+  &:hover {
+    fill: $focused-color;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+.menu-button .icon-cross {
+  display: none;
+}

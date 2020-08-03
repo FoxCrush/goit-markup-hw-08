@@ -1,0 +1,17 @@
+.middle-footer-container .call-lable {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  margin-bottom: 21px;
+}
+.middle-footer-container .social-list {
+  @extend %social-list-main-settings;
+  .social-link {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: #ffffff;
+  }
+}

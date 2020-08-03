@@ -1,0 +1,48 @@
+$main-bgc-white: #ffffff;
+$secondary-bgc-grey: #f5f4fa;
+$footer-bgc: #2f303a;
+$focused-color: #2196f3;
+$prime-text-color: #212121;
+$description-text-color: #757575;
+$main-black-color: #000000;
+$footer-dark-grey-text-color: rgba(255, 255, 255, 0.4);
+$transform-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+$main-transition-speed: 250ms;
+$main-section-width: 1200px;
+$mobile-section-width: 480px;
+$tablet-section-width: 768px;
+$desktop-section-width: 1200px;
+$portfolio-section-width: 1230px;
+$center-element: 0 auto;
+%main-body-settings {
+  background-color: $main-bgc-white;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  color: $prime-text-color;
+}
+%social-list-main-settings {
+  display: flex;
+  max-width: 270px;
+  padding: 0px 32px;
+  .social-list-item {
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    &::nth-child(4) {
+      margin-right: 0px;
+    }
+    .social-link {
+      max-width: 44px;
+      max-height: 44px;
+      padding: 12px;
+      transition: background-color $main-transition-speed $transform-cubic,
+        fill $main-transition-speed $transform-cubic;
+      &:hover,
+      &:focus {
+        background-color: $focused-color;
+        fill: #ffffff;
+      }
+    }
+  }
+}

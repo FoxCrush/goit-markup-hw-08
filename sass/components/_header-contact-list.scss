@@ -1,0 +1,42 @@
+.header-contact-list {
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+  }
+
+  .item:not(:last-child) {
+    margin-bottom: 16px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .contact-list-link {
+    display: flex;
+    align-items: center;
+    margin: $center-element;
+
+    color: $description-text-color;
+    fill: $description-text-color;
+    transition: color 250ms $transform-cubic, fill 250ms $transform-cubic;
+    @media screen and (max-width: 767px) {
+      justify-content: center;
+    }
+    &:focus,
+    &:hover {
+      color: $focused-color;
+      fill: $focused-color;
+    }
+    .contact-list-title {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      @media screen and (min-width: 768px) {
+        font-size: 12px;
+      }
+    }
+    .contacts-icon {
+      margin-right: 10px;
+    }
+  }
+}

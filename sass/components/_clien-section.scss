@@ -1,0 +1,14 @@
+.clients {
+  display: none;
+  max-width: 1200px;
+  padding: 37px 15px 94px 15px;
+  margin: $center-element;
+  .clients-lable {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    margin-bottom: 50px;
+  }
+}

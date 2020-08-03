@@ -1,0 +1,17 @@
+.hero-button {
+  display: inline-block;
+  padding: 10px 30px;
+  border: 0;
+  border-radius: 4px;
+  background-color: $focused-color;
+  cursor: pointer;
+  .button-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    /* identical to box height, or 187% */
+    letter-spacing: 0.06em;
+
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,23 @@
+.logo {
+  text-transform: capitalize;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+
+  padding: 16px 0 16px 15px;
+
+  &-firsthalf {
+    display: flex;
+    color: $focused-color;
+  }
+  &-secondhalf {
+    margin-left: 8px;
+    color: $main-black-color;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 26px 0px;
+    margin-right: 80px;
+  }
+}
