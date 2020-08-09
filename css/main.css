@@ -671,21 +671,9 @@ button {
 }
 
 .features {
-  display: none;
-  max-width: 1200px;
+  max-width: 480px;
   margin: 0 auto;
-  padding: 93px 15px;
-}
-
-.features .features-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.features .features-list .features-card {
-  min-width: 270px;
-  margin-right: 30px;
+  padding: 60px 15px;
 }
 
 .features .features-list .features-card:nth-child(4) {
@@ -693,11 +681,16 @@ button {
 }
 
 .features-card .icon-frame {
-  min-width: 270px;
   min-height: 120px;
-  padding: 25px 100px;
   background-color: #f5f4fa;
-  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .features-card .icon-frame .icon {
@@ -719,6 +712,7 @@ button {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .performance {
