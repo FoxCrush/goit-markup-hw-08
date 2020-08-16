@@ -1,5 +1,11 @@
 .features {
-  max-width: $mobile-section-width;
+  @media screen and (min-width: 768) {
+    max-width: $mobile-section-width;
+  }
+
+  @media screen and (min-width: 768) {
+    display: flex;
+  }
   margin: 0 auto;
   padding: 60px 15px;
   .features-list {
@@ -7,6 +13,9 @@
       &:nth-child(4) {
         margin-right: 0px;
       }
+    }
+    @media screen and (min-width: 768) {
+      display: flex;
     }
   }
 }
